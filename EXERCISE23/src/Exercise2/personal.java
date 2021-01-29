@@ -1,22 +1,23 @@
+package Exercise2;
 
-
-public class personalinfo {
-	String name, gender, birthday, citizenship, marital_status, address, phone;
-	int age;
+public class personal {
+	
+	String personal_info, name, age, gender, birthday, citizenship, marital_status, address, phone;
 	
 	
-	personalinfo(){
+	personal(){
 		
+		this.personal_info ="My personal information";
 		this.gender= "Female";
 		this.birthday= "1 May 1998";
-		this.age = 22;
+		this.age = "22 years old";
 		this.citizenship = "Malaysian";
 		this.marital_status= "Single";
-		this.address= "789-G jalan sungai dua, 11700 gelugor, pulau pinang";
-		this.phone = "01133905160";
+		this.address= "789-G Jalan Sungai Dua, 11700 Gelugor, Pulau Pinang.";
+		this.phone = "011-33905160";
 	}
 	
-	public personalinfo(String n){
+	public personal(String n){
 		
 		this.name=n;
 		
@@ -24,9 +25,9 @@ public class personalinfo {
 	
 	public void printPinfo(){
 	
-		personalinfo n = new personalinfo("Sasikala Gauthaman");
+		personal n = new personal("Sasikala Gauthaman");
 		
-		
+		System.out.println("My personal information");
 		System.out.println("\nName: "+n.name);
 		System.out.println("Gender: "+gender);
 		System.out.println("Date of Birth: "+birthday);
@@ -35,6 +36,6 @@ public class personalinfo {
 		System.out.println("Marital Status: "+marital_status);
 		System.out.println("Address: "+address);
 		System.out.println("No phone: "+phone);
-		
 	}
+	
 }

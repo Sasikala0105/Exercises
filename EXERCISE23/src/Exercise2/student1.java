@@ -1,15 +1,16 @@
+package Exercise2;
 
-public class result {
+public class student1 extends personal {
 	String subject;
 	char results;
 	
 	
-	result(){
+	student1(){
 		
 		this.subject="STIA 1113";
 	}
 	
-	result(char a){
+	student1(char a){
 		
 		this.results=a;
 		
@@ -17,11 +18,12 @@ public class result {
 	
 	public void printResult() {
 		
-		System.out.println("\nResult");
+		System.out.println("\nResult :-");
 		
-		result r = new result('A');
+		student1 r = new student1('A');
 		System.out.println("Subject: "+subject);
 		System.out.println("Result: "+r.results);
 	}
+	
 
 }
